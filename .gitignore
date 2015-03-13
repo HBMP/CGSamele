@@ -26,3 +26,13 @@
 *.exe
 *.out
 *.app
+/Chessia/lib/x86/ThirdParty/*.exp
+/Chessia/obj/x86/debug/glew/*.idb
+/Chessia/bin/x86/*.ilk
+/Chessia/obj/x86/debug/glew/glew.tlog/*.lastbuildstate
+/Chessia/obj/x86/debug/glew/*.log
+/Chessia/*.opensdf
+/Chessia/bin/x86/*.pdb
+/Chessia/obj/x86/debug/glew/*.pdb
+/Chessia/*.sdf
+/Chessia/obj/x86/debug/glew/glew.tlog/*.tlog
