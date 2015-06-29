@@ -75,7 +75,7 @@
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
       <TreatWarningAsError>true</TreatWarningAsError>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;GLBINDING_EXPORTS;STRINGS_BY_GL;WIN32;UNICODE;_UNICODE;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_DEBUG;CMAKE_INTDIR="Debug";glbinding_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;GLBINDING_EXPORTS;UNICODE;_UNICODE;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR="Debug";glbinding_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
@@ -170,36 +170,6 @@
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <CustomBuild Include="E:\Source\open\glbinding-1.1.0\source\glbinding\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/Source/open/glbinding-1.1.0/source/glbinding/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-D:\Program\CMake\bin\cmake.exe -HE:/Source/open/glbinding-1.1.0 -BE:/Source/open/glbinding-1.1.0/build --check-stamp-file E:\Source\open\glbinding-1.1.0\build\source\glbinding\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/Source/open/glbinding-1.1.0/source/glbinding/CMakeLists.txt;E:\Source\open\glbinding-1.1.0\source\glbinding\CMakeLists.txt;D:\Program\CMake\share\cmake-3.1\Modules\FindOpenGL.cmake;D:\Program\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;D:\Program\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;D:\Program\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;E:\Source\open\glbinding-1.1.0\source\glbinding\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\Source\open\glbinding-1.1.0\build\source\glbinding\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/Source/open/glbinding-1.1.0/source/glbinding/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-D:\Program\CMake\bin\cmake.exe -HE:/Source/open/glbinding-1.1.0 -BE:/Source/open/glbinding-1.1.0/build --check-stamp-file E:\Source\open\glbinding-1.1.0\build\source\glbinding\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/Source/open/glbinding-1.1.0/source/glbinding/CMakeLists.txt;E:\Source\open\glbinding-1.1.0\source\glbinding\CMakeLists.txt;D:\Program\CMake\share\cmake-3.1\Modules\FindOpenGL.cmake;D:\Program\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;D:\Program\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;D:\Program\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;E:\Source\open\glbinding-1.1.0\source\glbinding\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\Source\open\glbinding-1.1.0\build\source\glbinding\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-    </CustomBuild>
-  </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\glbinding\source\AbstractFunction.cpp" />
     <ClCompile Include="src\glbinding\source\AbstractValue.cpp" />
@@ -567,11 +537,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="src\glbinding\source\Meta_Maps.h" />
     <ClInclude Include="src\glbinding\source\RingBuffer.h" />
     <ClInclude Include="src\glbinding\source\RingBuffer.hpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="E:/Source/open/glbinding-1.1.0/build/ZERO_CHECK.vcxproj">
-      <Project>22DAF35B-DC82-41B2-8B02-F58B47AC01C9</Project>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

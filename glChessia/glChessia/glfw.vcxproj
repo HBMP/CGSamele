@@ -261,11 +261,6 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="E:/Source/open/glfw-3.1.1/build/ZERO_CHECK.vcxproj">
-      <Project>770C8DF8-D7AB-4036-8A66-E098F6BF257A</Project>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="src\glfw\glfw3.h" />
     <ClInclude Include="src\glfw\glfw3native.h" />
     <ClInclude Include="src\glfw\glfw_config.h" />

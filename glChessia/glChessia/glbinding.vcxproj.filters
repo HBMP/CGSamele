@@ -1103,9 +1103,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="E:\Source\open\glbinding-1.1.0\source\glbinding\CMakeLists.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <Filter Include="Source Files\gl">
       <UniqueIdentifier>{45620CB8-9DA2-454C-ACD6-F6DD480AFCDB}</UniqueIdentifier>
     </Filter>
