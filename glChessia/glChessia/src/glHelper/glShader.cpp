@@ -1,6 +1,5 @@
 #include <glHelper/glShaderObject.hpp>
 
-#include <common/Utility.hpp>
 #include <common/Assert.hpp>
 #include <common/Marco.h>
 
@@ -24,13 +23,19 @@ namespace glhelper
 				buffer.clear();
 			}
 
-			DWORD buffer_readed = 0;
 			do
 			{
+				DWORD buffer_readed = 0;
+
 				::ReadFile(file_handle, file_buffer.Buffer(), file_buffer.Size(), &buffer_readed, nullptr);
 
+				if (buffer_readed == 0)
+				{
+					break;
+				}
+
 				buffer += file_buffer.Buffer();
-			} while (buffer_readed == 0);
+			} while (true);
 		}
 
 		std::string ShaderCompileErrorCheck(GLShader& shader)

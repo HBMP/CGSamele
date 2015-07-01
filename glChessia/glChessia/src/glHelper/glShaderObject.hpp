@@ -6,6 +6,7 @@
 
 #include <glHelper/glHelper.h>
 #include <glbinding/gl/gl.h>
+
 #include <common/Utility.hpp>
 
 namespace glhelper
@@ -44,7 +45,6 @@ namespace glhelper
 		bool	   deleted_;
 		gl::GLuint handle_;
 	};
-
 }
 
 #endif
